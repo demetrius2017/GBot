@@ -1,2 +1,2 @@
-worker: node parser
-worker: node build/server
+worker2: node parser
+worker1: node build/server
