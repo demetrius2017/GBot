@@ -29,7 +29,7 @@ async function getData(exch) { // возвращаем массив
 		}
 
 //		url = `https://bittrex.com/Api/v2.0/pub/market/GetTicks?marketName=${NAME_COIN}-${NAME_COIN_TWO}&tickInterval=${intervalFromBittrex}`;
-		url = `https://bittrex.com/Api/v2.0/pub/market/GetTicks?marketName=${NAME_COIN}-${NAME_COIN_TWO}&tickInterval=fiveMin'
+		url = `https://bittrex.com/Api/v2.0/pub/market/GetTicks?marketName=${NAME_COIN}-${NAME_COIN_TWO}&tickInterval=fiveMin';
 		data = await req(url);
 		var arr = data.result.reverse().slice(1, 200);
 		var step = 1
